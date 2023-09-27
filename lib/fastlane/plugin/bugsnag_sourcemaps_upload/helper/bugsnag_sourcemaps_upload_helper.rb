@@ -23,7 +23,7 @@ module Fastlane
         if platform == "ios"
           command += "--bundle ./ios/ios.bundle "
         else
-          command += "--bundle index.android.bundle "
+          command += "--bundle ./android/android.bundle "
         end
         if app_version
           command += "--app-version=#{app_version} "
