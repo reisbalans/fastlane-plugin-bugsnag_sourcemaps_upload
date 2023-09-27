@@ -38,15 +38,6 @@ module Fastlane
         if code_bundle_id
           command += " --code-bundle-id #{code_bundle_id} "
         end
-        if strip
-          command += "--strip-project-root "
-        end
-        if overwrite
-          command += "--overwrite "
-        end
-        if wildcard_prefix
-          command += "--add-wildcard-prefix "
-        end
         if endpoint
           command += "--endpoint #{endpoint} "
         end
