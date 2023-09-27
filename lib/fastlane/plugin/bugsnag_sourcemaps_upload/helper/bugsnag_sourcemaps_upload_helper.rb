@@ -19,7 +19,7 @@ module Fastlane
       end
 
       def self.upload_bundle(api_key, platform, app_version, code_bundle_id, path, bundle_path, minified_url, strip, overwrite, wildcard_prefix, upload_sources, upload_modules, endpoint)
-        command = "npx bugsnag-source-maps upload-react-native --api-key #{api_key} --source-map #{path}"
+        command = "npx bugsnag-source-maps upload-react-native --api-key #{api_key} --source-map #{path} "
         if minified_url
           command += "--bundle #{minified_url} "
         else
